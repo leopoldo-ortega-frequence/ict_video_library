@@ -1,0 +1,6 @@
+/appscript
+/appscript/*.json
+/node_modules
+util.js
+.clasp.json
+reference.js

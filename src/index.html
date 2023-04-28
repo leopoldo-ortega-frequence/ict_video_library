@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <?!= HtmlService.createHtmlOutputFromFile("app.css").getContent(); ?>
+  </head>
+  <body>
+    <h1 class="app_header container">Video Gallery</h1>
+    <main id="app_root" class="container">
+      <module-video-nav></module-video-nav>
+      <div class="app_content">
+        <div class="content_container">
+          <div>Loading, Please Wait...</div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const APP_DATA = <?!= JSON.stringify(data) ?>;
+    </script>
+    <?!= HtmlService.createHtmlOutputFromFile("Components.js").getContent(); ?>
+    <?!= HtmlService.createHtmlOutputFromFile("index.js").getContent(); ?>
+  </body>
+</html>

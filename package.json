@@ -1,0 +1,13 @@
+{
+  "name": "video-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "util.js",
+  "scripts": {
+     "build": "node util.js && clasp push",
+    "watch": "nodemon --watch src --watch server --exec \"npm run build\" --ext js,html,css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
